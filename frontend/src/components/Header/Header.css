@@ -1,0 +1,61 @@
+.header-container {
+  display: block;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  animation: none !important;
+  transition: none !important;
+}
+
+.gradient-background {
+  width: 100%;
+  height: 8.9rem; /* 89px */
+  position: absolute;
+  background: linear-gradient(91deg, rgba(0, 128, 128, 0.47) 0%, rgba(255, 127, 80, 0.47) 100%);
+  box-shadow: 0rem 0.4rem 0.4rem 0.2rem rgba(0, 0, 0, 0.25); /* 4px */
+  border: 0.1rem #008080 solid; /* 1px */
+  backdrop-filter: blur(2rem); /* 20px */
+}
+
+.nav-links {
+  width: 54rem; /* 540px */
+  height: 2.8rem; /* 28px */
+  position: absolute;
+  left: 130rem; /* 851px */
+  top: 3.8rem; /* 38px */
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem; /* 50px */
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+  font-size: 2.4rem; /* 24px */
+  font-family: 'Acme';
+  font-weight: 400;
+  line-height: 2.75rem; /* 27.5px */
+  word-wrap: break-word;
+}
+
+.brand-name {
+  width: 16.1rem; /* 161px */
+  position: absolute;
+  left: 16.1rem; /* 161px */
+  top: 3.8rem; /* 38px */
+  color: white;
+  font-size: 2.4rem; /* 24px */
+  font-family: 'Acme';
+  font-weight: 400;
+  line-height: 2.75rem; /* 27.5px */
+  word-wrap: break-word;
+}
+
+.brand-logo {
+  width: 5.8rem; /* 58px */
+  height: 5.7rem; /* 57px */
+  position: absolute;
+  left: 9.1rem; /* 91px */
+  top: 1.6rem; /* 16px */
+}

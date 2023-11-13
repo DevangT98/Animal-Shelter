@@ -1,0 +1,142 @@
+/* home.css */
+html {
+  font-size: 62.5%;
+}
+
+.section {
+  height: 100vh; /* Each section takes up the full height of the viewport */
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.section-one {
+  width: 100%;
+  z-index: 2; /* Higher than the SVG container */
+  position: relative;
+}
+
+.svg-container {
+  position: absolute;
+  top: calc(100vh - 150px); /* Adjust to position correctly between sections */
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Below section-one content */
+  z-index: 2;
+}
+
+.svg-shape {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.svg-shape-1 {
+  top: 10px; /* Adjust this value to move SVG shape 2 higher */
+}
+
+.svg-shape-2 {
+  top: 30px; /* Adjust this value to move SVG shape 2 higher */
+}
+
+.section-two {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+
+
+.hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 3;
+}
+
+.btn {
+  position: absolute;
+  width: 23.6rem;
+  height: 8rem;
+  border-radius: 3.2rem;
+  font-family: 'Acme', sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 8rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 4;
+
+  /* Adding a stroke-like box shadow */
+  box-shadow: inset 0 0 0 2px black, 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+/* Explore button specific styles */
+.btn.explore {
+  left: 17.4rem;
+  top: 70.5rem;
+  background-color: #008080; /* Replace [StrokeColor] with the desired stroke color */
+  
+  &:hover {
+    background-color: #159aab;
+    box-shadow: inset 0 0 0 2px black, 0px 0.6rem 1.2rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Match button specific styles */
+.btn.match {
+  left: 46.9rem;
+  top: 70.5rem;
+  background-color: #FF7F50; /* Replace [StrokeColor] with the desired stroke color */
+  
+  &:hover {
+    background-color: #c53041;
+    box-shadow: inset 0 0 0 2px black, 0px 0.6rem 1.2rem rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+.dose-text {
+    position: absolute;
+    left: 18rem;
+    top: 46.9rem;
+    width: 54.6rem;
+    height: 26.7rem;
+  
+    /* Add your typography styles */
+    color: rgba(255, 255, 255, 0.79);
+    text-align: center;
+    text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    font-family: 'Acme', sans-serif;
+    font-size: 9.6rem; /* 96px / 10 */
+    line-height: 9.6rem; /* Same as font size for 100% */
+  }
+
+  .of-text {
+    text-align: center;
+    text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    font-family: Acme;
+    font-size: 9.6rem;
+    font-weight: 400;
+    line-height: 9.6rem;
+    position: absolute;
+    top: 56.5rem;
+    left: 14.6rem;
+    width: 59.9rem;
+    height: 9.6rem;
+  }
+
+  
