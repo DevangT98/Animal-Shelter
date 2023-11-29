@@ -1,10 +1,9 @@
-/* home.css */
 html {
   font-size: 62.5%;
 }
 
 .section {
-  height: 100vh; /* Each section takes up the full height of the viewport */
+  height: 100vh; 
   width: 100%;
   height: 100vh;
   
@@ -12,16 +11,16 @@ html {
 
 .section-one {
   width: 100%;
-  z-index: 2; /* Higher than the SVG container */
+  z-index: 2; 
   position: relative;
 }
 
 .svg-container {
   position: absolute;
-  top: calc(100vh - 150px); /* Adjust to position correctly between sections */
+  top: calc(100vh - 150px); 
   left: 0;
   width: 100%;
-  z-index: 1; /* Below section-one content */
+  z-index: 1; 
   z-index: 2;
 }
 
@@ -36,18 +35,18 @@ html {
 }
 
 .svg-shape-1 {
-  top: 10px; /* Adjust this value to move SVG shape 2 higher */
+  top: 1rem; 
 }
 
 .svg-shape-2 {
-  top: 30px; /* Adjust this value to move SVG shape 2 higher */
+  top: 3rem; 
 }
 
 .section-two {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
-  z-index: 1;
+  z-index: 3;
 }
 
 
@@ -80,15 +79,13 @@ html {
   transition: background-color 0.3s, box-shadow 0.3s;
   z-index: 4;
 
-  /* Adding a stroke-like box shadow */
   box-shadow: inset 0 0 0 2px black, 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
-/* Explore button specific styles */
 .btn.explore {
   left: 17.4rem;
   top: 70.5rem;
-  background-color: #008080; /* Replace [StrokeColor] with the desired stroke color */
+  background-color: #008080; 
   
   &:hover {
     background-color: #159aab;
@@ -96,11 +93,10 @@ html {
   }
 }
 
-/* Match button specific styles */
 .btn.match {
   left: 46.9rem;
   top: 70.5rem;
-  background-color: #FF7F50; /* Replace [StrokeColor] with the desired stroke color */
+  background-color: #FF7F50; 
   
   &:hover {
     background-color: #c53041;
@@ -116,13 +112,12 @@ html {
     width: 54.6rem;
     height: 26.7rem;
   
-    /* Add your typography styles */
     color: rgba(255, 255, 255, 0.79);
     text-align: center;
     text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     font-family: 'Acme', sans-serif;
     font-size: 9.6rem; /* 96px / 10 */
-    line-height: 9.6rem; /* Same as font size for 100% */
+    line-height: 9.6rem; 
   }
 
   .of-text {

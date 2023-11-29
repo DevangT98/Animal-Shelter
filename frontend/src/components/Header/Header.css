@@ -59,3 +59,13 @@
   left: 9.1rem; /* 91px */
   top: 1.6rem; /* 16px */
 }
+
+.login-link {
+  text-decoration: none;
+}
+
+.brand-link {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;
+}
+
